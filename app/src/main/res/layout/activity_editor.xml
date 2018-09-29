@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margins_all"
+        android:orientation="vertical"
+        tools:context=".EditorActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/book_title"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margins_all"
+                android:layout_marginRight="@dimen/margins_all"
+                android:layout_toRightOf="@id/title_field"
+                android:hint="@string/new_title"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/supplier_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/supplier_name"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/supplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margins_all"
+                android:layout_marginRight="@dimen/margins_all"
+                android:layout_toRightOf="@id/supplier_field"
+                android:hint="@string/supplier"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margins_all">
+
+            <TextView
+                android:id="@+id/supplier_phone_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="@dimen/margins_all"
+                android:text="@string/supplier_phone"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/supplier_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margins_all"
+                android:layout_marginLeft="@dimen/margins_all"
+                android:layout_marginRight="@dimen/margins_all"
+                android:layout_toRightOf="@id/supplier_phone_field"
+                android:hint="@string/supplier_phone"
+                android:inputType="phone"
+                android:textSize="@dimen/text_size_small" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="order"
+            android:text="@string/action_order" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/price_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/price"
+                android:textSize="@dimen/text_size" />
+
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/margins_all"
+                android:layout_marginRight="@dimen/margins_all"
+                android:layout_toRightOf="@id/price_field"
+                android:hint="@string/price"
+                android:inputType="numberDecimal"
+                android:text="@string/zero_value"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/quantity_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/inv"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/subract_button"
+                android:layout_width="@dimen/buttons"
+                android:layout_height="@dimen/buttons"
+                android:onClick="subtractButton"
+                android:text="@string/action_subtract" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="@dimen/buttons"
+                android:layout_height="@dimen/buttons"
+                android:onClick="addButton"
+                android:text="@string/action_add" />
+
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margins_all"
+                android:layout_toRightOf="@id/quantity_field"
+                android:hint="@string/quantity"
+                android:inputType="numberDecimal"
+                android:text="@string/zero_value"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

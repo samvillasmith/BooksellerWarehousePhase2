@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margins_all">12dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="buttons">36dp</dimen>
+    <dimen name="zerothsize">0dp</dimen>
+
+</resources>

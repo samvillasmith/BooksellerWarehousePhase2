@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Book Seller Warehouse</string>
+    <string name="add_inventory">Add Title</string>
+    <string name="edit_inventory">Edit Item</string>
+    <string name="failed_update">Update Failed</string>
+    <string name="item_updated">Item Updated</string>
+    <string name="checkparameters">Please Enter All Fields</string>
+    <string name="belowzerotrigger">Please Enter A Quantity</string>
+    <string name="Editing">Keep Editing</string>
+    <string name="discard_dialog">Exit without saving? All changes will be lost.</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="new_title">Title</string>
+    <string name="action_order">order</string>
+    <string name="action_delete_all">Delete All Books</string>
+    <string name="book_add">Add Book</string>
+    <string name="book_title">Book Title</string>
+    <string name="price">Price</string>
+    <string name="quantity">Title Quantity</string>
+    <string name="supplier">Supplier</string>
+    <string name="supplier_name">Supplier</string>
+    <string name="supplier_phone">Supplier Phone</string>
+    <string name="flaginvalidprice">Enter Price</string>
+    <string name="Stock">\u0020\u0020\u0020\u0020\u0020\u0020Stock left:\u0020\u0020</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="discard">Discard</string>
+    <string name="inv">Inventory</string>
+    <string name="nobooksimage">Nothing On Your Books Image</string>
+    <string name="zero_value">0</string>
+    <string name="action_subtract">-</string>
+    <string name="action_add">+</string>
+    <string name="action_name">Name</string>
+    <string name="phoneaction">tel:</string>
+    <string name="delete_book1">Are You Sure You Want to Delete this Entry?</string>
+    <string name="order">Purchase</string>
+    <string name="outofstock">Out of Stock</string>
+    <string name="currency_value">USD$</string>
+    <string name="deletion_failed">Unable to Delete</string>
+    <string name="remove_inventory">Inventory Removed</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="nothing_on_books">There is nothing on your books at the moment</string>
+    <string name="click_here_add">Click here to add</string>
+    <string name="unabletosave">Unable to Save</string>
+    <string name="itemsaved">Item Saved</string>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarehouseActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margins_all"
+            android:layout_weight="1"
+            android:text="@string/nothing_on_books"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/zerothsize"
+            android:layout_gravity="fill_horizontal"
+            android:layout_weight="10"
+            android:contentDescription="@string/nobooksimage"
+            android:src="@drawable/booksvintage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margins_all"
+            android:text="@string/click_here_add"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margins_all"
+        android:src="@drawable/ic_action_name"
+        app:rippleColor="@color/colorAccent" />
+</RelativeLayout>
